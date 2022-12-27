@@ -69,4 +69,38 @@
   cursor: pointer;
   background-color: transparent;
   border-color: white;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-suggestion {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 100;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  margin-top: 0.3px;
+  left: 0px;
+  right: 52px;
+  list-style-type: none;
+}
+
+.suggestion-button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 100;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  width: 100%;
+  text-align: left;
+  padding: 3px 5px;
+}
+
+.suggestion-button:hover {
+  border-radius: 3px;
+  background-color: rgb(0, 153, 255);
 }/*# sourceMappingURL=App.css.map */
