@@ -24,12 +24,15 @@ const icons = {
 const Pack = ({ icon, title, info, description }: Props): JSX.Element => {
   const Icon = icons[icon];
   return (
-    <article>
-      <div className="">
-        <Icon /> <h4 className="article-title">{title}</h4>
+    <article className="article-container">
+      <div className="article-icon">
+        <Icon />
       </div>
-      <h3 className="article-info">{info}</h3>
-      <p className="article-description">{description}</p>
+      <div className="article-container-text">
+        <h4 className="article-title">{title}</h4>
+        <h3 className="article-info">{info}</h3>
+        <p className="article-description">{description}</p>
+      </div>
     </article>
   );
 };
