@@ -15,7 +15,14 @@ const App = (): JSX.Element => {
   return (
     <main className="App">
       {forecast ? (
-        <Forecast forecastData={forecast} />
+        <Forecast
+          forecastData={forecast}
+          inputValue={inputValue}
+          suggestions={suggestions}
+          onInputChange={onInputChange}
+          onButtonClick={onButtonClick}
+          onSuggestionSelect={onSuggestionSelect}
+        />
       ) : (
         <SearchInput
           inputValue={inputValue}

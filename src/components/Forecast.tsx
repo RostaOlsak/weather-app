@@ -9,25 +9,64 @@ import { forecastType } from "../types";
 import Sunrise from "./Icons/Sunrise";
 import Sunset from "./Icons/Sunset";
 import Pack from "./Pack";
+import { ChangeEvent } from "react";
+import { suggestionType } from "../types";
 
 type Props = {
   forecastData: forecastType;
+  inputValue: string;
+  suggestions: [];
+  onInputChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  onButtonClick: () => void;
+  onSuggestionSelect: (suggestion: suggestionType) => void;
 };
 
 const Celsius = ({ temp }: { temp: number }): JSX.Element => (
   <span>{temp}°</span>
 );
 
-const Forecast = ({ forecastData }: Props): JSX.Element => {
+const Forecast = ({
+  forecastData,
+  inputValue,
+  suggestions,
+  onInputChange,
+  onButtonClick,
+  onSuggestionSelect,
+}: Props): JSX.Element => {
   const currentWeather = forecastData.list[0];
 
   return (
     <div className="forecast-container">
+      <section className="App-background-box2">
+        <div className="input-container">
+          <input
+            type="text"
+            value={inputValue}
+            className="main-input2"
+            onChange={onInputChange}
+          />
+          <button className="search-button2" onClick={onButtonClick}>
+            search
+          </button>
+          <ul className="input-suggestion2">
+            {suggestions.map((suggestion: suggestionType, index: number) => (
+              <li className="li-suggestion" key={suggestion.name + "-" + index}>
+                <button
+                  className="suggestion-button"
+                  onClick={() => onSuggestionSelect(suggestion)}
+                >
+                  {suggestion.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
       <div className="forecast-main">
         <section className="forecast-section-container">
-              <img
-                src={`http://openweathermap.org/img/wn/${forecastData.list[0].weather[0].icon}@2x.png`}
-              />
+          <img
+            src={`http://openweathermap.org/img/wn/${forecastData.list[0].weather[0].icon}@2x.png`}
+          />
           <h2 className="forecast-title">
             {forecastData.name},{" "}
             <span className="forecast-title-span">{forecastData.country}</span>
@@ -140,16 +179,16 @@ const Forecast = ({ forecastData }: Props): JSX.Element => {
           <div className="sunset-sunrise">
             <div className="ss-container">
               <div className="ss-image">
-              <Sunrise />
+                <Sunrise />
               </div>
-            {getTime(forecastData.sunrise)}
+              {getTime(forecastData.sunrise)}
             </div>
-           <div className="ss-container">
-            <div className="ss-image">
-            <Sunset />
+            <div className="ss-container">
+              <div className="ss-image">
+                <Sunset />
+              </div>
+              {getTime(forecastData.sunset)}
             </div>
-            {getTime(forecastData.sunset)}
-           </div>
           </div>
         </section>
       </div>
