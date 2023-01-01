@@ -1,6 +1,6 @@
 const Pocit = (): JSX.Element => (
   <svg
-    width="60"
+    width="50"
     height="60"
     viewBox="0 0 40 100"
     fill="white"

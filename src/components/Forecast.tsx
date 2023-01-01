@@ -20,17 +20,14 @@ const Celsius = ({ temp }: { temp: number }): JSX.Element => (
 
 const Forecast = ({ forecastData }: Props): JSX.Element => {
   const currentWeather = forecastData.list[0];
+
   return (
     <div className="forecast-container">
       <div className="forecast-main">
         <section className="forecast-section-container">
-          {forecastData.list.slice(0, 1).map((item, i) => (
-            <div key={i}>
               <img
-                src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
+                src={`http://openweathermap.org/img/wn/${forecastData.list[0].weather[0].icon}@2x.png`}
               />
-            </div>
-          ))}
           <h2 className="forecast-title">
             {forecastData.name},{" "}
             <span className="forecast-title-span">{forecastData.country}</span>
