@@ -11,6 +11,7 @@ import Sunset from "./Icons/Sunset";
 import Pack from "./Pack";
 import { ChangeEvent } from "react";
 import { suggestionType } from "../types";
+import { useRef } from "react";
 
 type Props = {
   forecastData: forecastType;
@@ -35,11 +36,19 @@ const Forecast = ({
 }: Props): JSX.Element => {
   const currentWeather = forecastData.list[0];
 
+  const inputRef: React.RefObject<HTMLInputElement> = useRef(null);
+
+  const clearInput = (): void => {
+    inputRef.current!.value = "";
+    inputRef.current!.focus();
+  };
+
   return (
     <div className="forecast-container">
       <section className="App-background-box2">
         <div className="input-container">
           <input
+            ref={inputRef}
             type="text"
             value={inputValue}
             className="main-input2"
@@ -47,6 +56,9 @@ const Forecast = ({
           />
           <button className="search-button2" onClick={onButtonClick}>
             search
+          </button>
+          <button className="search-button-clear" onClick={clearInput}>
+            +
           </button>
           <ul className="input-suggestion2">
             {suggestions.map((suggestion: suggestionType, index: number) => (

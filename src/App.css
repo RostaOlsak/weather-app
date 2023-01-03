@@ -15,7 +15,7 @@
   border-radius: 0.7%;
   width: 100%;
   max-width: 500px;
-  padding: 24px;
+  padding: 10px 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +100,7 @@
   font-family: "Lato";
   font-size: 0.85rem;
   font-weight: 100;
-  padding: 6px 4px;
+  padding: 6px 6px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   font-weight: 500;
@@ -109,8 +109,24 @@
   border-color: white;
 }
 
+.search-button-clear {
+  color: rgb(61, 61, 61);
+  font-weight: 100;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+}
+
 .input-container {
   position: relative;
+}
+
+.input-container .search-button-clear {
+  position: absolute;
+  right: 57px;
+  top: 2px;
 }
 
 .input-suggestion {
@@ -135,7 +151,7 @@
   border-radius: 3px;
   margin-top: 0.8px;
   left: 0px;
-  right: 48px;
+  right: 68px;
   list-style-type: none;
 }
 
@@ -162,7 +178,7 @@
   border-radius: 0.7%;
   width: 100%;
   max-width: 500px;
-  padding: 24px;
+  padding: 10px 18px;
 }
 
 .forecast-section-container {
@@ -503,7 +519,7 @@
   }
   .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
     width: 132px;
-    height: 80px;
+    height: 68px;
     font-size: 12px;
   }
   .sunset-sunrise {
@@ -526,6 +542,27 @@
     overflow-x: scroll;
     margin-right: 48px;
     margin-left: 48px;
+  }
+  .search-button2 {
+    padding: 5px 4px;
+  }
+  .search-button-clear {
+    margin-top: 4px;
+    padding: 0px 2px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .main-input2 {
+    margin-top: 7px;
+    padding: 4px 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-color: white;
+  }
+  .App-background-box2 {
+    align-items: center;
   }
 }
 @media screen and (max-width: 375px) {
