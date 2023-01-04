@@ -1,0 +1,83 @@
+@import "../Mixins/Mixins";
+
+.App-background-box {
+  @include background-box();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Lato";
+}
+
+.title-info {
+  @include main-text();
+}
+
+.question-title {
+  font-weight: 400;
+  color: $light-main-color;
+}
+
+.input-container {
+  position: relative;
+}
+
+.main-input {
+  @include main-text();
+  margin-top: 6px;
+  padding: 6px 4px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-color: white;
+}
+
+.main-input:focus {
+  outline: none;
+}
+
+.main-input:hover {
+  box-shadow: $hover-color;
+}
+
+.search-button {
+  @include main-text();
+  padding: 6px 4px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+
+  background-color: transparent;
+  border-color: white;
+}
+
+.input-suggestion {
+  @include main-text();
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 3px;
+  margin-top: 0.8px;
+  left: 0px;
+  right: 66px;
+  list-style-type: none;
+}
+
+.suggestion-button {
+  @include main-text();
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  width: 100%;
+  text-align: left;
+  padding: 3px 5px;
+}
+
+.suggestion-button:hover {
+  border-radius: 3px;
+  background-color: $light-main-color;
+}

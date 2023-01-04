@@ -1,0 +1,28 @@
+.article-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-icon {
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.article-container-text {
+  font-family: "Lato";
+  margin-top: 14px;
+}
+
+.article-title {
+  font-weight: 500;
+}
+
+.article-info {
+  color: white;
+  font-weight: 900;
+}
+
+.article-description {
+  font-weight: 100;
+  font-size: 10px;
+}

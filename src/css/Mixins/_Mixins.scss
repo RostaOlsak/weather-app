@@ -1,0 +1,38 @@
+$light-main-color: white;
+$hover-color: 0px 0px 3px rgb(184, 184, 184);
+
+@mixin main-text {
+  font-family: "Lato";
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+@mixin main-text2 {
+  font-family: "Lato";
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+
+@mixin background-box {
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 1px rgba(26, 25, 25, 0.2);
+  border-radius: 0.7%;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 18px;
+}
+
+@mixin small-box {
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 1px rgba(26, 25, 25, 0.2);
+  border-radius: 0.7%;
+  width: 100%;
+  max-width: 190px;
+  padding: 25px;
+}
+
+@mixin white-font-weight {
+  font-family: "Lato";
+  font-weight: 700;
+  color: white;
+}

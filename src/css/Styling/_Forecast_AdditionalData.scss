@@ -1,0 +1,63 @@
+@import "../Mixins/Mixins";
+
+.additional-data-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wind-container {
+  text-align: right;
+  margin-top: 12px;
+  @include small-box();
+}
+
+.feel-container {
+  @extend .wind-container;
+}
+
+.humidity-container {
+  @extend .wind-container;
+}
+
+.pop-container {
+  @extend .wind-container;
+}
+
+.pressure-container {
+  @extend .wind-container;
+}
+
+.visibility-container {
+  @extend .wind-container;
+}
+
+.sunset-sunrise {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 1px rgba(26, 25, 25, 0.2);
+  border-radius: 0.7%;
+  width: 100%;
+  margin-left: 4px;
+  margin-top: 12px;
+  max-width: 475px;
+  padding: 8px;
+  font-family: "Lato";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.ss-container {
+  display: flex;
+  align-items: center;
+}
+
+.ss-image {
+  margin-right: 8px;
+  margin-top: 2px;
+}

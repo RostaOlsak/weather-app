@@ -1,0 +1,70 @@
+@import "../Mixins/Mixins";
+
+.forecast-section-container {
+  text-align: center;
+  align-items: center;
+}
+
+.forecast-title {
+  font-family: "Lato";
+  font-size: 1.7rem;
+  margin-top: -8px;
+}
+
+.forecast-title-span {
+  @include main-text();
+  font-size: 1.7rem;
+}
+
+.forecast-today {
+  @include main-text();
+  font-weight: 400;
+  font-size: 45px;
+  margin-top: 5px;
+}
+
+.description-span {
+  font-family: "Lato";
+  font-weight: 700;
+  color: white;
+}
+
+.maxmin {
+  font-weight: 100;
+}
+
+//SCROLL WITH WEATHER WITH HOURS
+
+.forecast-section-scroll {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.forecast-section-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.forecast-section-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.783);
+  border-radius: 20px;
+}
+
+.forecast-section-scroll::-webkit-scrollbar-track {
+  background: #39eec7;
+  border-radius: 20px;
+}
+
+.scroll-time {
+  margin-top: 30px;
+  margin-bottom: -12px;
+  margin-left: 4px;
+  @include white-font-weight();
+}
+
+.scroll-temp {
+  @include white-font-weight();
+  margin-top: -12px;
+  margin-left: 4px;
+  margin-bottom: 10px;
+}
