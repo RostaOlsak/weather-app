@@ -151,7 +151,7 @@
   border-radius: 3px;
   margin-top: 0.8px;
   left: 0px;
-  right: 68px;
+  right: 54px;
   list-style-type: none;
 }
 
@@ -455,7 +455,34 @@
     right: 69px;
   }
 }
-@media screen and (max-width: 820px) {
+@media screen and (min-width: 820px) and (max-width: 822px) {
+  .forecast-container {
+    max-width: 820px;
+    padding: 10px 18px;
+  }
+  .main-input2 {
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+  }
+  .search-button2 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .search-button-clear {
+    color: rgb(61, 61, 61);
+    font-weight: 100;
+    transform: rotate(-45deg);
+    font-size: 35px;
+    padding: 0px 14px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
   .title {
     font-size: 3rem;
     font-weight: 100;
@@ -500,16 +527,18 @@
     font-size: 0.95rem;
   }
   .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
-    width: 182px;
-    font-size: 18px;
+    max-width: 330px;
+    height: 130px;
+    padding: 25px;
+    font-size: 32px;
   }
   .sunset-sunrise {
-    width: 457px;
-    margin-top: 8px;
-    font-size: 18px;
-    height: 24px;
-    margin-left: 11px;
-    padding: 10px;
+    margin-left: 19px;
+    margin-top: 12px;
+    max-width: 749px;
+    height: 20px;
+    padding: 16px;
+    font-size: 22px;
   }
   .forecast-container {
     padding: 0px;
@@ -523,6 +552,47 @@
     overflow-x: scroll;
     margin-right: 50px;
     margin-left: 50px;
+  }
+  .App-background-box2 {
+    align-items: center;
+  }
+  .input-container {
+    margin-top: 10px;
+  }
+  .forecast-title {
+    font-family: "Lato";
+    font-size: 40px;
+    margin-top: -8px;
+  }
+  .forecast-title-span {
+    font-size: 40px;
+  }
+  .forecast-today {
+    font-weight: 400;
+    font-size: 60px;
+    margin-top: 5px;
+  }
+  .description-span {
+    font-size: 20px;
+  }
+  .maxmin {
+    font-size: 20px;
+  }
+  .article-icon {
+    margin-top: 8px;
+    margin-left: -10px;
+  }
+  .article-description {
+    font-size: 15px;
+  }
+  .ss-image {
+    margin-right: 15px;
+    width: 20px;
+  }
+  .input-suggestion2 {
+    margin-top: 0.1px;
+    left: 0px;
+    right: 69px;
   }
 }
 @media screen and (max-width: 414px) {
@@ -591,6 +661,12 @@
     overflow-x: scroll;
     margin-right: 50px;
     margin-left: 50px;
+  }
+  .App-background-box2 {
+    align-items: center;
+  }
+  .input-container {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 393px) {
@@ -684,6 +760,9 @@
   .App-background-box2 {
     align-items: center;
   }
+  .input-container {
+    margin-top: 0px;
+  }
 }
 @media screen and (max-width: 375px) {
   .title {
@@ -752,6 +831,9 @@
     margin-right: 30px;
     margin-left: 30px;
   }
+  .input-container {
+    margin-top: 0px;
+  }
 }
 @media screen and (max-width: 361px) {
   .title {
@@ -819,5 +901,8 @@
     overflow-x: scroll;
     margin-right: 30px;
     margin-left: 30px;
+  }
+  .input-container {
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=App.css.map */
