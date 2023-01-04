@@ -337,7 +337,30 @@
 
 @media screen and (min-width: 2500px) {
   .App-background-box {
-    max-width: 1000px;
+    max-width: 800px;
+  }
+  .main-input2 {
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+  }
+  .search-button2 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .search-button-clear {
+    color: rgb(61, 61, 61);
+    font-weight: 100;
+    transform: rotate(-45deg);
+    font-size: 35px;
+    padding: 0px 14px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
   }
   .title {
     font-size: 6rem;
@@ -360,6 +383,76 @@
     left: 0px;
     right: 102px;
     list-style-type: none;
+  }
+  .forecast-container {
+    max-width: 800px;
+    padding: 10px 18px;
+  }
+  .forecast-section-scroll {
+    display: flex;
+    overflow-x: scroll;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
+    max-width: 340px;
+    height: 175px;
+    padding: 25px;
+    font-size: 40px;
+  }
+  .sunset-sunrise {
+    margin-left: 4px;
+    margin-top: 12px;
+    max-width: 759px;
+    height: 30px;
+    padding: 16px;
+    font-size: 25px;
+  }
+  .scroll-temp {
+    margin-top: -10px;
+    margin-bottom: 13px;
+    font-size: 20px;
+  }
+  .scroll-time {
+    margin-top: 30px;
+    margin-bottom: -10px;
+    margin-left: 4px;
+    font-size: 20px;
+  }
+  .forecast-title {
+    font-family: "Lato";
+    font-size: 40px;
+    margin-top: -8px;
+  }
+  .forecast-title-span {
+    font-size: 40px;
+  }
+  .forecast-today {
+    font-weight: 400;
+    font-size: 60px;
+    margin-top: 5px;
+  }
+  .description-span {
+    font-size: 20px;
+  }
+  .maxmin {
+    font-size: 20px;
+  }
+  .article-icon {
+    margin-top: 8px;
+    margin-left: -10px;
+  }
+  .article-description {
+    font-size: 15px;
+  }
+  .ss-image {
+    margin-right: 15px;
+    width: 20px;
+  }
+  .input-suggestion2 {
+    margin-top: 0.1px;
+    left: 0px;
+    right: 69px;
   }
 }
 @media screen and (max-width: 820px) {

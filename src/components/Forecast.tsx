@@ -67,7 +67,7 @@ const Forecast = ({
                   className="suggestion-button"
                   onClick={() => onSuggestionSelect(suggestion)}
                 >
-                  {suggestion.name}
+                  {suggestion.name}, {suggestion.country}
                 </button>
               </li>
             ))}
