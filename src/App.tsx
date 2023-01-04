@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./css/App.scss";
 import SearchInput from "./components/SearchInput";
 import Forecast from "./components/Forecast";
 import useForecast from "./customHooks/useForecast";
