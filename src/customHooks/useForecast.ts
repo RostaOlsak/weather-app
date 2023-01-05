@@ -17,7 +17,7 @@ const useForecast = () => {
       .then((data) => setSuggestions(data)).catch(e => console.log(e));
   };
   const onInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value.trim();
+    const value = e.target.value;
     setInputValue(value);
 
     if (value === "") return;
