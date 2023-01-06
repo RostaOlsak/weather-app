@@ -14,6 +14,7 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  font-family: "Lato"
 }
 
 .forecast-container {
@@ -240,7 +241,7 @@
   .input-suggestion {
     font-size: 0.95rem;
     margin-top: 0.4px;
-    right: 55px;
+    right: 59px;
   }
   .scroll-time {
     margin-top: 25px;
@@ -250,6 +251,7 @@
   }
   .wind-container {
     margin-top: 8px;
+    font-size: 1.1rem;
   }
   .suggestion-button {
     font-size: 0.95rem;
@@ -314,6 +316,9 @@
   .input-container {
     margin-top: 0px;
   }
+  .input-suggestion2 {
+    right: 50px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -324,7 +329,7 @@
     font-size: 0.85rem;
   }
   .input-suggestion {
-    right: 49px;
+    right: 55px;
   }
   .forecast-title {
     font-size: 25px;
@@ -373,8 +378,6 @@
     padding: 8px;
   }
   .input-suggestion2 {
-    margin-top: 0.4px;
-    right: 49px;
-    left: 2px;
+    left: 0px;
   }
 }

@@ -2,11 +2,9 @@
 
 .forecast-section-container {
   text-align: center;
-  align-items: center;
 }
 
 .forecast-title {
-  font-family: "Lato";
   font-size: 1.7rem;
   margin-top: -8px;
 }
@@ -24,16 +22,10 @@
 }
 
 .description-span {
-  font-family: "Lato";
-  font-weight: 700;
-  color: white;
+  @include white-font-weight;
 }
 
-.maxmin {
-  font-weight: 100;
-}
-
-//SCROLL WITH WEATHER WITH HOURS
+//WEATHER SCROLLBAR
 
 .forecast-section-scroll {
   display: flex;

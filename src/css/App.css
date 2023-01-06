@@ -14,11 +14,9 @@
 .title {
   font-size: 3rem;
   font-weight: 100;
-  font-family: "Lato";
 }
 
 .title-info {
-  font-family: "Lato";
   font-size: 1.2rem;
   font-weight: 100;
 }
@@ -33,14 +31,13 @@
 }
 
 .main-input {
-  font-family: "Lato";
   font-size: 1.2rem;
   font-weight: 100;
-  margin-top: 6px;
-  padding: 6px 4px;
+  padding: 6px 6px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   border-color: white;
+  margin-top: 6px;
 }
 
 .main-input:focus {
@@ -52,33 +49,29 @@
 }
 
 .search-button {
-  font-family: "Lato";
   font-size: 1.2rem;
   font-weight: 100;
-  padding: 6px 4px;
+  padding: 6px 6px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  font-weight: 500;
   cursor: pointer;
   background-color: transparent;
   border-color: white;
 }
 
 .input-suggestion {
-  font-family: "Lato";
   font-size: 1.2rem;
   font-weight: 100;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 3px;
-  margin-top: 0.8px;
+  margin-top: 0.6px;
   left: 0px;
-  right: 66px;
+  right: 72px;
   list-style-type: none;
 }
 
 .suggestion-button {
-  font-family: "Lato";
   font-size: 1.2rem;
   font-weight: 100;
   border: none;
@@ -105,7 +98,6 @@
 }
 
 .article-container-text {
-  font-family: "Lato";
   margin-top: 14px;
 }
 
@@ -114,19 +106,17 @@
 }
 
 .article-info {
+  font-weight: 700;
   color: white;
-  font-weight: 900;
 }
 
 .article-description {
-  font-weight: 100;
   font-size: 10px;
 }
 
 .App-background-box2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
 }
 
@@ -137,10 +127,8 @@
 }
 
 .main-input2 {
-  font-family: "Lato";
   font-size: 1rem;
-  font-weight: 100;
-  padding: 6px 4px;
+  padding: 6px 6px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   border-color: white;
@@ -157,11 +145,9 @@
 .search-button2 {
   font-family: "Lato";
   font-size: 0.85rem;
-  font-weight: 100;
   padding: 6px 6px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  font-weight: 500;
   cursor: pointer;
   background-color: transparent;
   border-color: white;
@@ -169,7 +155,6 @@
 
 .search-button-clear {
   color: rgb(61, 61, 61);
-  font-weight: 100;
   transform: rotate(-45deg);
   cursor: pointer;
   font-size: 30px;
@@ -180,11 +165,9 @@
 .input-suggestion2 {
   font-family: "Lato";
   font-size: 0.85rem;
-  font-weight: 100;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 3px;
-  margin-top: 0.8px;
   left: 0px;
   right: 54px;
   list-style-type: none;
@@ -192,24 +175,20 @@
 
 .forecast-section-container {
   text-align: center;
-  align-items: center;
 }
 
 .forecast-title {
-  font-family: "Lato";
   font-size: 1.7rem;
   margin-top: -8px;
 }
 
 .forecast-title-span {
-  font-family: "Lato";
   font-size: 1.2rem;
   font-weight: 100;
   font-size: 1.7rem;
 }
 
 .forecast-today {
-  font-family: "Lato";
   font-size: 1.2rem;
   font-weight: 100;
   font-weight: 400;
@@ -218,13 +197,8 @@
 }
 
 .description-span {
-  font-family: "Lato";
   font-weight: 700;
   color: white;
-}
-
-.maxmin {
-  font-weight: 100;
 }
 
 .forecast-section-scroll {
@@ -251,13 +225,11 @@
   margin-top: 30px;
   margin-bottom: -12px;
   margin-left: 4px;
-  font-family: "Lato";
   font-weight: 700;
   color: white;
 }
 
 .scroll-temp {
-  font-family: "Lato";
   font-weight: 700;
   color: white;
   margin-top: -12px;
@@ -277,29 +249,27 @@
 
 .wind-container, .visibility-container, .pressure-container, .pop-container, .humidity-container, .feel-container {
   text-align: right;
-  margin-top: 12px;
+  margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 0px 1px rgba(26, 25, 25, 0.2);
   border-radius: 0.7%;
   width: 100%;
-  max-width: 190px;
+  font-size: 20px;
+  max-width: 193px;
   padding: 25px;
 }
 
 .sunset-sunrise {
-  display: flex;
-  justify-content: space-evenly;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 0px 1px rgba(26, 25, 25, 0.2);
   border-radius: 0.7%;
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
   margin-left: 4px;
-  margin-top: 12px;
+  margin-top: 10px;
   max-width: 475px;
   padding: 8px;
-  font-family: "Lato";
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 .ss-container {
@@ -321,6 +291,7 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  font-family: "Lato";
 }
 
 .forecast-container {
@@ -342,25 +313,16 @@
     font-size: 20px;
   }
   .search-button2 {
-    padding-top: 7px;
-    padding-bottom: 7px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    font-weight: 500;
     font-size: 1.2rem;
-    font-weight: 600;
   }
   .search-button-clear {
     color: rgb(61, 61, 61);
-    font-weight: 100;
     transform: rotate(-45deg);
     font-size: 35px;
-    padding: 0px 14px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    padding: 0px 18px;
   }
   .title {
-    font-size: 6rem;
+    font-size: 5.6rem;
   }
   .title-info {
     font-size: 2rem;
@@ -370,39 +332,26 @@
     margin-top: 12px;
   }
   .search-button {
-    font-size: 2rem;
+    font-size: 1.95rem;
   }
   .input-suggestion {
     font-size: 2rem;
-    border-radius: 3px;
     background-color: rgb(255, 255, 255);
-    margin-top: 0.8px;
-    left: 0px;
     right: 102px;
-    list-style-type: none;
   }
   .forecast-container {
     max-width: 800px;
-    padding: 10px 18px;
-  }
-  .forecast-section-scroll {
-    display: flex;
-    overflow-x: scroll;
-    margin-right: 6px;
-    margin-left: 6px;
+    padding: 6px 10px;
   }
   .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
     max-width: 340px;
     height: 175px;
-    padding: 25px;
-    font-size: 40px;
+    font-size: 34px;
   }
   .sunset-sunrise {
-    margin-left: 4px;
-    margin-top: 12px;
-    max-width: 759px;
-    height: 30px;
-    padding: 16px;
+    max-width: 766px;
+    height: 32px;
+    padding: 12px;
     font-size: 25px;
   }
   .scroll-temp {
@@ -417,17 +366,13 @@
     font-size: 20px;
   }
   .forecast-title {
-    font-family: "Lato";
     font-size: 40px;
-    margin-top: -8px;
   }
   .forecast-title-span {
     font-size: 40px;
   }
   .forecast-today {
-    font-weight: 400;
     font-size: 60px;
-    margin-top: 5px;
   }
   .description-span {
     font-size: 20px;
@@ -437,7 +382,6 @@
   }
   .article-icon {
     margin-top: 8px;
-    margin-left: -10px;
   }
   .article-description {
     font-size: 15px;
@@ -447,69 +391,58 @@
     width: 20px;
   }
   .input-suggestion2 {
-    margin-top: 0.1px;
     left: 0px;
     right: 69px;
   }
 }
 @media screen and (min-width: 820px) and (max-width: 822px) {
+  .App-background-box {
+    max-width: 820px;
+  }
   .forecast-container {
     max-width: 820px;
-    padding: 10px 18px;
   }
   .main-input2 {
-    width: 200px;
-    height: 25px;
-    font-size: 20px;
+    height: 30px;
+    font-size: 22px;
   }
   .search-button2 {
     padding-top: 7px;
     padding-bottom: 7px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    font-weight: 500;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
   }
   .search-button-clear {
     color: rgb(61, 61, 61);
-    font-weight: 100;
     transform: rotate(-45deg);
     font-size: 35px;
-    padding: 0px 14px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    padding: 4px 31px;
   }
   .title {
-    font-size: 3rem;
-    font-weight: 100;
-    font-family: "Lato";
+    font-size: 4.5rem;
   }
   .title-info {
-    font-family: "Lato";
-    font-size: 0.75rem;
-    font-weight: 100;
+    font-size: 1.2rem;
   }
   .main-input {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
   }
   .search-button {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
   }
   .input-suggestion {
-    font-size: 0.95rem;
-    margin-top: 0.4px;
-    right: 50px;
+    font-size: 1.5rem;
+    right: 78px;
+  }
+  .input-suggestion2 {
+    margin-top: 0.1px;
+    right: 82px;
   }
   .scroll-time {
-    margin-top: 30px;
     margin-bottom: -8px;
-    margin-left: 4px;
     font-size: 20px;
   }
   .scroll-temp {
     margin-top: -8px;
-    margin-left: 4px;
     margin-bottom: 15px;
     font-size: 20px;
   }
@@ -517,21 +450,12 @@
     justify-content: space-evenly;
   }
   .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
-    text-align: right;
-    margin-top: 10px;
-  }
-  .suggestion-button {
-    font-size: 0.95rem;
-  }
-  .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
     max-width: 330px;
     height: 130px;
-    padding: 25px;
     font-size: 32px;
   }
   .sunset-sunrise {
     margin-left: 19px;
-    margin-top: 12px;
     max-width: 749px;
     height: 20px;
     padding: 16px;
@@ -545,10 +469,8 @@
     height: 8px;
   }
   .forecast-section-scroll {
-    display: flex;
-    overflow-x: scroll;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 55px;
+    margin-left: 55px;
   }
   .App-background-box2 {
     align-items: center;
@@ -557,17 +479,13 @@
     margin-top: 10px;
   }
   .forecast-title {
-    font-family: "Lato";
     font-size: 40px;
-    margin-top: -8px;
   }
   .forecast-title-span {
     font-size: 40px;
   }
   .forecast-today {
-    font-weight: 400;
     font-size: 60px;
-    margin-top: 5px;
   }
   .description-span {
     font-size: 20px;
@@ -575,33 +493,16 @@
   .maxmin {
     font-size: 20px;
   }
-  .article-icon {
-    margin-top: 8px;
-    margin-left: -10px;
-  }
   .article-description {
     font-size: 15px;
   }
   .ss-image {
     margin-right: 15px;
-    width: 20px;
-  }
-  .input-suggestion2 {
-    margin-top: 0.1px;
-    left: 0px;
-    right: 69px;
   }
 }
 @media screen and (max-width: 414px) {
-  .title {
-    font-size: 3rem;
-    font-weight: 100;
-    font-family: "Lato";
-  }
   .title-info {
-    font-family: "Lato";
     font-size: 0.75rem;
-    font-weight: 100;
   }
   .main-input {
     font-size: 0.95rem;
@@ -612,39 +513,29 @@
   .input-suggestion {
     font-size: 0.95rem;
     margin-top: 0.4px;
-    right: 50px;
+    right: 59px;
   }
   .scroll-time {
     margin-top: 25px;
-    margin-bottom: -12px;
-    margin-left: 4px;
-  }
-  .scroll-temp {
-    margin-top: -12px;
-    margin-left: 4px;
-    margin-bottom: 10px;
   }
   .row {
     justify-content: space-evenly;
   }
   .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
-    text-align: right;
     margin-top: 8px;
+    font-size: 1.1rem;
   }
   .suggestion-button {
     font-size: 0.95rem;
   }
   .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
     width: 142px;
-    font-size: 14px;
   }
   .sunset-sunrise {
-    width: 375px;
-    margin-top: 8px;
-    font-size: 13px;
+    width: 379px;
+    margin-top: 6px;
     height: 24px;
     margin-left: 9px;
-    padding: 10px;
   }
   .forecast-container {
     padding: 0px;
@@ -654,8 +545,6 @@
     height: 8px;
   }
   .forecast-section-scroll {
-    display: flex;
-    overflow-x: scroll;
     margin-right: 50px;
     margin-left: 50px;
   }
@@ -667,111 +556,41 @@
   }
 }
 @media screen and (max-width: 393px) {
-  .title {
-    font-size: 3rem;
-    font-weight: 100;
-    font-family: "Lato";
-  }
-  .title-info {
-    font-family: "Lato";
-    font-size: 0.75rem;
-    font-weight: 100;
-  }
-  .main-input {
-    font-size: 0.95rem;
-  }
-  .search-button {
-    font-size: 0.95rem;
-  }
-  .input-suggestion {
-    font-size: 0.95rem;
-    margin-top: 0.4px;
-    right: 54px;
-  }
   .scroll-time {
     margin-top: 20px;
-    margin-bottom: -12px;
-    margin-left: 4px;
-    font-size: 16px;
   }
   .scroll-temp {
     margin-top: -16px;
-    margin-left: 4px;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  .row {
-    justify-content: space-evenly;
-  }
-  .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
-    text-align: right;
-    margin-top: 8px;
-  }
-  .suggestion-button {
-    font-size: 0.95rem;
   }
   .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
     width: 132px;
     height: 68px;
-    font-size: 12px;
+    font-size: 13px;
   }
   .sunset-sunrise {
     width: 360px;
     margin-top: 5px;
     font-size: 13px;
-    height: 24px;
-    margin-left: 9px;
     padding: 6px;
-  }
-  .forecast-container {
-    padding: 0px;
-  }
-  .forecast-section-scroll::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  .forecast-section-scroll {
-    display: flex;
-    overflow-x: scroll;
-    margin-right: 48px;
-    margin-left: 48px;
   }
   .search-button2 {
     padding: 5px 4px;
   }
   .search-button-clear {
     margin-top: 4px;
-    padding: 0px 2px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
   }
   .main-input2 {
     margin-top: 7px;
     padding: 4px 6px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-color: white;
-  }
-  .App-background-box2 {
-    align-items: center;
   }
   .input-container {
     margin-top: 0px;
+  }
+  .input-suggestion2 {
+    right: 50px;
   }
 }
 @media screen and (max-width: 375px) {
-  .title {
-    font-size: 3rem;
-    font-weight: 100;
-    font-family: "Lato";
-  }
-  .title-info {
-    font-family: "Lato";
-    font-size: 0.75rem;
-    font-weight: 100;
-  }
   .main-input {
     font-size: 0.85rem;
   }
@@ -779,127 +598,53 @@
     font-size: 0.85rem;
   }
   .input-suggestion {
-    font-size: 0.85rem;
-    margin-top: 0.4px;
-    right: 50px;
+    right: 55px;
+  }
+  .forecast-title {
+    font-size: 25px;
+  }
+  .forecast-title-span {
+    font-size: 25px;
+  }
+  .forecast-today {
+    font-size: 40px;
+  }
+  .description-span {
+    font-size: 13px;
+  }
+  .maxmin {
+    font-size: 13px;
+  }
+  .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
+    width: 125px;
+    font-size: 12px;
   }
   .scroll-time {
-    margin-top: 25px;
-    margin-bottom: -12px;
-    margin-left: 4px;
+    font-size: 14px;
   }
   .scroll-temp {
-    margin-top: -12px;
-    margin-left: 4px;
-    margin-bottom: 10px;
-  }
-  .row {
-    justify-content: space-evenly;
-  }
-  .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
-    text-align: right;
-    margin-top: 8px;
-  }
-  .suggestion-button {
-    font-size: 0.85rem;
-  }
-  .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
-    width: 120px;
-    font-size: 11px;
+    font-size: 14px;
   }
   .sunset-sunrise {
-    width: 330px;
-    margin-top: 8px;
-    font-size: 14px;
+    width: 346px;
+    font-size: 13px;
     height: 24px;
-    margin-left: 12px;
-    padding: 10px;
-  }
-  .forecast-container {
-    padding: 0px;
-  }
-  .forecast-section-scroll::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
   }
   .forecast-section-scroll {
-    display: flex;
-    overflow-x: scroll;
     margin-right: 30px;
     margin-left: 30px;
   }
-  .input-container {
-    margin-top: 0px;
-  }
 }
 @media screen and (max-width: 361px) {
-  .title {
-    font-size: 3rem;
-    font-weight: 100;
-    font-family: "Lato";
-  }
-  .title-info {
-    font-family: "Lato";
-    font-size: 0.75rem;
-    font-weight: 100;
-  }
-  .main-input {
-    font-size: 0.85rem;
-  }
-  .search-button {
-    font-size: 0.85rem;
-  }
-  .input-suggestion {
-    font-size: 0.85rem;
-    margin-top: 0.4px;
-    right: 50px;
-  }
-  .scroll-time {
-    margin-top: 25px;
-    margin-bottom: -12px;
-    margin-left: 4px;
-  }
-  .scroll-temp {
-    margin-top: -12px;
-    margin-left: 4px;
-    margin-bottom: 10px;
-  }
-  .row {
-    justify-content: space-evenly;
-  }
-  .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
-    text-align: right;
-    margin-top: 8px;
-  }
-  .suggestion-button {
-    font-size: 0.85rem;
-  }
   .wind-container, .feel-container, .humidity-container, .pop-container, .pressure-container, .visibility-container {
     width: 118px;
     font-size: 11px;
   }
   .sunset-sunrise {
-    width: 325px;
-    margin-top: 6px;
-    font-size: 14px;
-    height: 24px;
-    margin-left: 7px;
-    padding: 10px;
+    width: 328px;
+    padding: 8px;
   }
-  .forecast-container {
-    padding: 0px;
-  }
-  .forecast-section-scroll::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  .forecast-section-scroll {
-    display: flex;
-    overflow-x: scroll;
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-  .input-container {
-    margin-top: 0px;
+  .input-suggestion2 {
+    left: 0px;
   }
 }/*# sourceMappingURL=App.css.map */
