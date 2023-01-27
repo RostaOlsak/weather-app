@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 # My Weather-app
 Basic weather application where you can search up current and future weather information. API key would be ignored in .env file but for the purpose of just showing my app i included it so others dont need to manually add it.
 
@@ -28,7 +29,7 @@ If you dont have npm installed:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/RostaOlsak/weather-app.git
    ```
 2. Install NPM packages
    ```sh
@@ -38,3 +39,12 @@ If you dont have npm installed:
    ```js
    npm run dev
    ```  
+ 
+ <!-- CONTACT -->
+## Contact
+
+Rostislav Olšák - olsakrostislav@gmail.com or rosta.olsak12@gmail.com
+
+Project Link: [https://github.com/RostaOlsak/weather-app.git](https://github.com/RostaOlsak/weather-app.git)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
