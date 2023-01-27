@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-# My Weather-app
+# My Weather app
 Basic weather application where you can search up current and future weather information. API key would be ignored in .env file but for the purpose of just showing my app i included it so others dont need to manually add it.
 
 You can also see:
